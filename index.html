@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #wrapper{
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      .container1{
+        background-color: rgb(5, 5, 106)
+      }
+      .container{
+      display: flex;
+      background-color: rgb(5, 5, 106);
+      justify-content: space-between;
+      margin: 0 auto;
+      width:1080px;
+      }
+      .item{
+        margin: 15px;
+        color: white;
+        font-size: 1.875rem;
+        list-style: none;
+      }
+      .container{
+        position: relative;
+        height:100%;
+      }
+      .background {
+        position: absolute;
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      .text{
+        margin: 40px;
+      font-family: 'poppins' ;
+      position:absolute;
+      font-size:40px;
+      color:#0E101D;
+      top:15%;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+      }
+#wrapper1{
+  position: relative;
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-pink{
+   border: 1px solid red;
+   background-color: red;
+   position: absolute;
+   top:500px;
+   left:700px;
+   color: white;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+}
+#yellow{
+  color: rgb(255, 0, 255);
+}
+pre{
+  display: inline;
+}
+#image{
+  height: 250px;
+  width: 250px;
+  left: 50%;
+  top: 20%;
+}
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="container1">
+      <div class="container">
+        <a href="index.html" class="item"  style="text-decoration: none;">Home</a>
+        <a href="skills.html" class="item" style="text-decoration: none;">Skills</a></p>
+        <a href="projects.html" class="item" style="text-decoration: none;">Projects</a></p>
+        <a href="Education.html" class="item" style="text-decoration: none;">Education Details</a></p>
+        <a href="contactus.html" class="item" style="text-decoration: none;">Contact Us</a></p>
+      </div>
+    </div>
+  <div class="box">
+      <img src="https://static.vecteezy.com/system/resources/previews/010/008/086/non_2x/background-dimension-3d-graphic-message-board-for-text-and-message-design-line-shadow-for-modern-web-design-free-vector.jpg" class="background">
+        <pre class="text">Hi There,
+          I am MohanKarthik
+          I am into <pre id="yellow">web development</pre>
+          <br>
+          <br>
+        </pre>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzKw8NxBPo3OYAHdgpJOyDvIqs_2lnPbxUF0xfLnz9A&s" style="border-radius: 70%;" class="background" id="image"> 
+      <div id="wrapper1">
+        <div class="btn-pink" style="font-size: large; border-radius: 2px;">Hire Me</div>
+     </div>
+ </div>
+  </div>
+</body>
+</html>
